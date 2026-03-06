@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Showcase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="portfolio-header">
+        <div class="container">
+            <h1>Creative Portfolio</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#projects" class="active">Projects</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="portfolio-main">
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Your Digital Portfolio</h2>
+                    <p>Showcase your work, skills, and achievements in a visually stunning way.</p>
+                    <div class="portfolio-buttons">
+                        <button class="btn-primary" id="showProjects">Explore Projects</button>
+                        <button class="btn-secondary" id="showAbout">Learn About Me</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section" style="display: none;">
+            <div class="container">
+                <h2>Featured Projects</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/400x300/4a90e2/ffffff?text=Web+Design" alt="Web Design Project">
+                        </div>
+                        <div class="project-info">
+                            <h3>E-commerce Website</h3>
+                            <p>A responsive online store built with React and Node.js.</p>
+                            <div class="project-meta">
+                                <span>UI/UX Design</span>
+                                <span>Frontend Development</span>
+                            </div>
+                            <a href="#" class="project-link">View Project</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/400x300/2ecc71/ffffff?text=Mobile+App" alt="Mobile App Development">
+                        </div>
+                        <div class="project-info">
+                            <h3>Health Tracking App</h3>
+                            <p>A fitness application with real-time data analytics.</p>
+                            <div class="project-meta">
+                                <span>Android/iOS</span>
+                                <span>Flutter</span>
+                            </div>
+                            <a href="#" class="project-link">View Project</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/400x300/f39c12/ffffff?text=Data+Visualization" alt="Data Visualization">
+                        </div>
+                        <div class="project-info">
+                            <h3>Data Dashboard</h3>
+                            <p>Interactive dashboard for business analytics.</p>
+                            <div class="project-meta">
+                                <span>Python</span>
+                                <span>D3.js</span>
+                            </div>
+                            <a href="#" class="project-link">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section" style="display: none;">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Welcome to my portfolio! I specialize in creating engaging digital experiences through web development, UI/UX design, and data visualization. With a passion for innovation, I combine technical expertise with creative problem-solving to deliver impactful solutions.</p>
+                        <p>My journey began in [year], and since then, I've worked on diverse projects ranging from e-commerce platforms to mobile applications. I thrive in collaborative environments and am always eager to learn and adapt to new technologies.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://via.placeholder.com/300x300/e74c3c/ffffff?text=Profile" alt="Profile Picture">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Get In Touch</h2>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="portfolio-footer">
+        <div class="container">
+            <p>&copy; 2023 Creative Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
